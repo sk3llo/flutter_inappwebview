@@ -546,8 +546,8 @@ class InAppWebViewController {
                 x509Certificate: x509certificate,
               );
             } catch (e, stacktrace) {
-              print(e);
-              print(stacktrace);
+//               print(e);
+//               print(stacktrace);
               return null;
             }
           } else {
