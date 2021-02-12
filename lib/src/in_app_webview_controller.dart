@@ -513,6 +513,7 @@ class InAppWebViewController {
         SslCertificate? sslCertificate;
         if (sslCertificateMap != null) {
           if (defaultTargetPlatform == TargetPlatform.iOS) {
+            print(sslCertificateMap["x509Certificate"]);
             try {
               X509Certificate x509certificate = X509Certificate.fromData(
                   data: sslCertificateMap["x509Certificate"]);
